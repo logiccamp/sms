@@ -1,0 +1,26 @@
+.student__intro {
+    height: fit-content;
+}
+.student__intro .student__img {
+    height: 200px;
+    border-radius: 1000px;
+    width: 200px;
+}
+.student__intro .student__img > img{
+    border-radius: 1000px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.student__documents {
+    overflow-x: hidden;
+    flex-wrap: nowrap;
+}
+.student__documents .document {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+}
+.student__documents .document > img {
+    height: 100%;
+}

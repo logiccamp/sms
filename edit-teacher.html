@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PANEL SACRED HEART </title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/admin_custom.css">
+    <link rel="stylesheet" href="./css/add_teacher.css">
+</head>
+<body>
+    <div class="main__wrapper justify-content-start">
+        <div class="sidebar active main__bg__dark">
+            <div class="sidebar__head">
+                <img src="./Assets/img/logo.png" alt="logo" class="img-fluid school__logo">
+            </div>
+            <hr class="sidebar__line">
+            <div class="sidebar__body">
+                <ul class="item">
+                    <li>
+                        <a href="./">
+                            <img src="./Assets/icons/icon_dashboard_white_white.png" alt="" class="img-fluid">
+                            <span>DASHBOARD</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./students.html">
+                            <img src="./Assets/icons/icon_students_white.png" alt="" class="img-fluid">
+                            <span>STUDENTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./teachers.html">
+                            <img src="./Assets/icons/icon_teachers_white.png" alt="" class="img-fluid">
+                            <span>Teachers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes.html">
+                            <img src="./Assets/icons/icon_classes_white.png" alt="" class="img-fluid">
+                            <span>CLASSES</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="subjects.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>SUBJECTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="examination.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>RESULT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./Assets/icons/icon_settings_white.png" alt="" class="img-fluid">
+                            <span >SETTINGS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid bg-light flex-1 px-4" id="page">
+            <div class="lead rounded bg-white shadow-sm container__header d-flex justify-content-between align-items-center py-1 px-2 pl-2">
+                <img src="./Assets//icons/icon_menu.png" alt="" class="img-fluid header__toggler">
+                <div class="header_user d-flex align-items-center">
+                    <div class="rounded-pill avatar shadow-sm">
+                        <img src="./Assets/icons/icon_user_action.png" alt="">
+                    </div>
+                    <small>admin</small>
+                    <img src="./Assets/icons//icon_caret_down.png" alt="caret" class="caret">
+                </div>
+            </div>
+            <div class="user_action card">
+                <ul>
+                    <li>
+                        <a class="text-muted" href="">Settings</a>
+                    </li>
+                    <hr class="m-0">
+                    <li>
+                        <a class="text-muted" href="">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="page">
+                <div class="page__header my-1">
+                    <div class="card alert p-0 pt-1 px-3">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-md-6">
+                                <a class="a" onclick="{goBack()}"><i class="fa fa-arrow-left"></i></a>
+                            </div>
+                            <nav aria-label="breadcrumb" class="m-0 col-md-6">
+                                <ol class="breadcrumb justify-content-end">
+                                <li class="breadcrumb-item"><a href="./admin.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="./teachers.html">Teachers</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add Teacher</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__inner">
+                    <div class="add__teacher rounded shadow-sm mx-auto bg-white my-2">
+                        <div class="alert alert-danger text-center py-3 mb-3">       
+                            <span class="h3 ">EDIT TEACHER : OLUDOKUN JOE</span>
+                        </div>
+                        <form action="" class="row form p-1">
+                            <div class="col-md-6">
+                                <div class="teacher__info px-3">
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="teacherFullname" id="teacherFullname" class="form-control">
+                                        <label for="teacherFullname">Fullname</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="teacherTel" id="teacherTel" class="form-control">
+                                        <label for="teacherTel">Telephone</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="email" name="teacherEmail" id="teacherEmail" class="form-control">
+                                        <label for="teacherEmail">Email</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="Email" name="teacherDOB" id="teacherDOB" class="form-control">
+                                        <label for="teacherDOB">Date of Birth</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="teacherAddress" id="teacherAddress" class="form-control input-lg">
+                                        <label for="teacherAddress">Address</label>
+                                    </div>
+                                    
+                                    <div class="form-group mb-3">
+                                        <select name="teacherReligion" class="form-control" id="teacherReligion">
+                                            <option value="">Select</option>
+                                            <option value="Christian">Chrisian</option>
+                                            <option value="Islam">Islam</option>
+                                        </select>
+                                        <label for="studentReligion">Religion</label>
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="teacherTribe" id="teacherTribe" class="form-control">
+                                        <label for="teacherTribe">Tribe</label>
+                                    </div>
+                                </div>
+
+
+                                <!-- student parent -->
+                          </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <input type="text" name="teacherAddress" id="teacherAddress" class="form-control input-lg">
+                                    <label for="teacherAddress">Address</label>
+                                </div>
+                                <div class="alert alert-secondary">Select class(s)</div>
+                                <div class="form-group pl-3 mb-3 teacher_classes">
+                                    <input  id="basic1" type="checkbox" name="classes" value="Basic 1" alt=""><label class="px-3 py-2" for="basic1">Basic 1</label> 
+                                    <br>
+                                    <input  id="basic1" type="checkbox" name="classes" value="Basic 1" alt=""><label class="px-3 py-2" for="basic1">Basic 1</label> 
+                                    <br>
+                                    <input  id="basic1" type="checkbox" name="classes" value="Basic 1" alt=""><label class="px-3 py-2" for="basic1">Basic 1</label> 
+                                    <br>
+                                    <input  id="basic1" type="checkbox" name="classes" value="Basic 1" alt=""><label class="px-3 py-2" for="basic1">Basic 1</label> 
+                                    <br>
+                                    <input  id="basic1" type="checkbox" name="classes" value="Basic 1" alt=""><label class="px-3 py-2" for="basic1">Basic 1</label> 
+                                    <br>
+                                    
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <select name="subject" class="form-control" id="subject">
+                                        <option value="subject 1">Subject 1</option>
+                                        <option value="subject 1">Subject 2</option>
+                                        <option value="subject 1">Subject 3</option>
+                                    </select>
+                                    <label for="teachersubject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex justify-content-center mx-auto my-4">
+                                <button class="btn main__bg__dark add__student__btn text-white btn-sm px-3 py-2">UPDATE</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+</html>

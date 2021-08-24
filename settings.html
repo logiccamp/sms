@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBJECTS SACRED HEART </title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/admin_custom.css">
+    <link rel="stylesheet" href="./css/settings.css">
+</head>
+<body>
+    <div class="main__wrapper justify-content-start">
+        <div class="sidebar active main__bg__dark">
+            <div class="sidebar__head">
+                <img src="./Assets/img/logo.png" alt="logo" class="img-fluid school__logo">
+            </div>
+            <hr class="sidebar__line">
+            <div class="sidebar__body">
+                <ul class="item">
+                    <li>
+                        <a href="./">
+                            <img src="./Assets/icons/icon_dashboard_white_white.png" alt="" class="img-fluid">
+                            <span>DASHBOARD</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./students.html">
+                            <img src="./Assets/icons/icon_students_white.png" alt="" class="img-fluid">
+                            <span>STUDENTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./teachers.html">
+                            <img src="./Assets/icons/icon_teachers_white.png" alt="" class="img-fluid">
+                            <span>Teachers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes.html">
+                            <img src="./Assets/icons/icon_classes_white.png" alt="" class="img-fluid">
+                            <span>CLASSES</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="subjects.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>SUBJECTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="examination.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>RESULT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./Assets/icons/icon_settings_white.png" alt="" class="img-fluid">
+                            <span >SETTINGS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid bg-light flex-1 px-4" id="page">
+            <div class="lead rounded bg-white shadow-sm container__header d-flex justify-content-between align-items-center py-1 px-2 pl-2 mt-2">
+                <img src="./Assets//icons/icon_menu.png" alt="" class="img-fluid header__toggler">
+                <div class="header_user d-flex align-items-center">
+                    <div class="rounded-pill avatar shadow-sm">
+                        <img src="./Assets/icons/icon_user_action.png" alt="">
+                    </div>
+                    <small>admin</small>
+                    <img src="./Assets/icons//icon_caret_down.png" alt="caret" class="caret">
+                </div>
+            </div>
+            <div class="user_action card">
+                <ul>
+                    <li>
+                        <a class="text-muted" href="">Settings</a>
+                    </li>
+                    <hr class="m-0">
+                    <li>
+                        <a class="text-muted" href="">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="page my-2 bg-light" style="overflow-y: scroll; height: calc(100vh - 80px);">
+                <div class="edit-settings">
+                    <form action="" class="form p-3 bg-white rounded shadow-sm">
+                        <header class="d-flex justify-content-between align-items-center">
+                            <h3 class="m-0">Edit</h3>
+                            <a onclick="document.getElementById('page').classList.toggle('active'); document.getElementsByClassName('sidebar')[0].classList.toggle('active'); document.getElementsByClassName('edit-settings')[0].style.display = 'none'" href="#?close-edit-settings" class="text-danger text-decoration-none fw-bold fs-2">&times;</a>
+                        </header>
+                        <hr>
+                        <div class="form-group">
+                            <label for="school_name"><small>School Name</small></label>
+                            <input type="text" id="school_name" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="school_Email"><small>School Email</small></label>
+                            <input type="email" id="school_Email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="school_Phone"><small>School Phone</small></label>
+                            <input type="text" id="school_Phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="school_fee"><small>School Fees Due Days</small></label>
+                            <input type="text" id="school_fee" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="school_Address"><small>School Address</small></label>
+                            <textarea input type="text" id="school_Address" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="school_Session"><small>Session</small></label>
+                            <select name="" id="session_list" class="form-control">
+                                <option value="">Select Section</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-2">
+                            <button class="w-100 btn btn-secondary">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+                <header class="my-3 d-flex align-items-center header"> <span class="fa fa-cogs"></span> &nbsp;<h4 class="m-0">System Settings</h4> </header>
+                <div class="row my-3">
+                    <div class="col-md-4 ">
+                        <div class="logo-container p-3 bg-white">
+                            <img src="./Assets/img/logo.png" alt="" class="img-fluid my-3">
+                            <center> <a href="#?editlogo" class="btn btn-secondary">Edit</a></center>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="main-settings shadow-sm rounded bg-white">
+                            <header class="p-3 d-flex align-items-center header"> <span class="fa fa-cog"></span> &nbsp;<h6  class="m-0">General Settings</h6 >  <a href="#?edit" onclick="document.getElementById('page').classList.toggle('active'); document.getElementsByClassName('sidebar')[0].classList.toggle('active'); document.getElementsByClassName('edit-settings')[0].style.display = 'block'" class="btn btn-secondary">Edit</a> </header>
+                            <hr class="m-0 ">
+                            <div class="settings px-2 pb-3">
+                                <table class="table table-stripped">
+                                    <tr>
+                                        <td>School Name</td>
+                                        <td>Mount Carmel School</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quia eaque, Lagos State</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone</td>
+                                        <td>+23487484747</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td>school@school.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Session</td>
+                                        <td>2018/2019</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fees Due Days</td>
+                                        <td>60</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/admin.js"></script>
+    <script src="./js/setting.js"></script>
+</body>
+</html>

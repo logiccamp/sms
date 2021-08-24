@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PANEL SACRED HEART </title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/admin_custom.css">
+    <link rel="stylesheet" href="./css/add_student.css">
+</head>
+<body>
+    <div class="main__wrapper justify-content-start">
+        <div class="sidebar active main__bg__dark">
+            <div class="sidebar__head">
+                <img src="./Assets/img/logo.png" alt="logo" class="img-fluid school__logo">
+            </div>
+            <hr class="sidebar__line">
+            <div class="sidebar__body">
+                <ul class="item">
+                    <li>
+                        <a href="./">
+                            <img src="./Assets/icons/icon_dashboard_white_white.png" alt="" class="img-fluid">
+                            <span>DASHBOARD</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./students.html">
+                            <img src="./Assets/icons/icon_students_white.png" alt="" class="img-fluid">
+                            <span>STUDENTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./teachers.html">
+                            <img src="./Assets/icons/icon_teachers_white.png" alt="" class="img-fluid">
+                            <span>Teachers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes.html">
+                            <img src="./Assets/icons/icon_classes_white.png" alt="" class="img-fluid">
+                            <span>CLASSES</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="subjects.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>SUBJECTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="examination.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>RESULT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./Assets/icons/icon_settings_white.png" alt="" class="img-fluid">
+                            <span >SETTINGS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid bg-light flex-1 px-4" id="page">
+            <div class="lead rounded bg-white shadow-sm container__header d-flex justify-content-between align-items-center py-1 px-2 pl-2">
+                <img src="./Assets//icons/icon_menu.png" alt="" class="img-fluid header__toggler">
+                <div class="header_user d-flex align-items-center">
+                    <div class="rounded-pill avatar shadow-sm">
+                        <img src="./Assets/icons/icon_user_action.png" alt="">
+                    </div>
+                    <small>admin</small>
+                    <img src="./Assets/icons//icon_caret_down.png" alt="caret" class="caret">
+                </div>
+            </div>
+            <div class="user_action card">
+                <ul>
+                    <li>
+                        <a class="text-muted" href="">Settings</a>
+                    </li>
+                    <hr class="m-0">
+                    <li>
+                        <a class="text-muted" href="">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="page">
+                <div class="page__header my-1">
+                    <div class="card alert p-0 pt-1 px-3">
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-md-6">
+                                <a class="a" onclick="{goBack()}"><i class="fa fa-arrow-left"></i></a>
+                            </div>
+                            <nav aria-label="breadcrumb" class="m-0 col-md-6">
+                                <ol class="breadcrumb justify-content-end">
+                                <li class="breadcrumb-item"><a href="./admin.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="./students.html">Students</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Olakunle </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__inner">
+                    <div class="add__student rounded shadow-sm mx-auto bg-white my-2">
+                        <div class="alert alert-danger text-center py-3 mb-3">       
+                            <span class="h3 ">UPDATE : OLAKUNLE MAZILAB</span>
+                        </div>
+                        <form action="" class="row form p-1">
+                            <div class="col-md-6">
+                                <div class="alert alert-secondary mt-3 mb-2 d-flex justify-content-between">
+                                    <span>Student Info</span> <span class="pointer toggle__student__info__minus"> <i class="fa fa-minus"></i></span> <span class="pointer toggle__student__info__eye inactive"> <i class="fa fa-eye"></i></span>
+                                </div>
+                                <div class="student__info px-3">
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="studentName" id="studentName" class="form-control">
+                                        <label for="studentName">Fullname</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="date" name="studentDOB" id="studntDOB" class="form-control">
+                                        <label for="studntDOB">Date of Birth</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="studentAddress" id="studentAddress" class="form-control input-lg">
+                                        <label for="studentAddress">Address</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <select name="studentReligion" class="form-control" id="studentReligion">
+                                            <option value="">Select</option>
+                                            <option value="Christian">Chrisian</option>
+                                            <option value="Islam">Islam</option>
+                                        </select>
+                                        <label for="studentReligion">Religion</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="studentHealth" id="studentHealth" class="form-control">
+                                        <label for="studentHealth">Health Status <small class="text-info fs-15">Please comment on student health status</small></label>
+                                    </div>
+                                </div>
+
+
+                                <!-- student parent -->
+
+                                <div class="alert alert-secondary mt-3 mb-2 d-flex justify-content-between">
+                                    <span>Parents Info</span> <span class="pointer toggle__parent__info__minus inactive"> <i class="fa fa-minus"></i></span> <span class="pointer toggle__parent__info__eye"> <i class="fa fa-eye"></i></span>
+                                </div>
+                                <div class="parent__info inactive px-3">
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="parentName" id="parentName" class="form-control">
+                                        <label for="parentName">Name</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="parentHAddress" id="parentHAddress" class="form-control">
+                                        <label for="parentHAddress">Home Address</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="parentBAddress" id="parentHAddress" class="form-control input-lg">
+                                        <label for="parentHAddress">Business Address</label>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input type="text" name="parentOccupation" id="parentOccupation" class="form-control input-lg">
+                                        <label for="parentOccupation">Occupation</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="alert alert-secondary mt-3 mb-2 d-flex justify-content-between">
+                                    <span>Student Passport</span> <span class="pointer toggle__student__passport__minus inactive"> <i class="fa fa-minus"></i></span> <span class="pointer toggle__student__passport__eye"> <i class="fa fa-eye"></i></span>
+                                </div>
+                                <div class="student__passport inactive">
+                                    <div class="student__passport__img">
+                                        
+                                    </div>
+                                    <input type="file" hidden id="student__passport" name="passport">
+                                    <label class="main__bg__dark text-white px-3 py-2 rounded" id="student__passport__label" for="student__passport">Upload</label>
+                                </div>
+
+                                <div class="alert alert-secondary mt-3 mb-2 d-flex justify-content-between">
+                                    <span>Documents <small class="text-danger fs-11">[optional]</small></span> 
+                                    <span class="pointer toggle__student__document__minus inactive"> <i class="fa fa-minus"></i></span> <span class="pointer toggle__student__document__eye"> <i class="fa fa-eye"></i></span>
+                                </div>
+                                <div class="student__documents inactive">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <div class="student__document__1 my-2">
+                                            <img src="" alt="image1">
+                                        </div>
+                                        <input type="file" hidden id="student__document__1" name="document1">
+                                        <label class="main__bg__dark text-white px-3 py-2 my-2 rounded student__document__label" id="student__document__1__label" for="student__document__1">Change Birth Certificate</label>
+
+                                        <div class="student__document__2 my-2">
+                                            <img src="" alt="image2">
+                                        </div>
+                                        <input type="file" hidden id="student__document__2" name="document2">
+                                        <label class="main__bg__dark text-white px-3 py-2 my-2 rounded student__document__label" id="student__document__2__label" for="student__document__2">Change Immunization Card</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group d-flex justify-content-center mx-auto my-4">
+                                <button class="btn btn-success add__student__btn text-white btn-sm px-3 py-2">UPDATE STUDENT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/admin.js"></script>
+    <script src="./js/add_student.js"></script>
+</body>
+</html>

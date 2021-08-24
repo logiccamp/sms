@@ -1,0 +1,9 @@
+.add__teacher {
+    width: 95%;
+}
+.teacher__info {
+    transition: 0.4s;
+}
+.teacher_classes input {
+    padding-left: 10px !important;
+}

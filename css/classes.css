@@ -1,0 +1,21 @@
+.classes_inner {
+    width: 95%;
+    max-width: 600px;
+}
+
+.add-class {
+    z-index: 10000;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.add-class form {
+    width: 95%;
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+}

@@ -1,0 +1,54 @@
+.add__student {
+    width: 95%;
+}
+.add__student .student__passport {
+    margin: 0 auto;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add__student .student__passport .student__passport__img {
+    background: #ccc;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+.add__student .student__passport .student__passport__img .student__passport__img__img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+
+}
+.add__student .student__passport label, .add__student__btn, .student__document__label{
+    cursor: pointer;
+    transition: 1s;
+}
+.add__student .student__passport label:hover, .add__student__btn:hover, .student__document__label:hover {
+    background: #B0596F !important;
+    margin: 2px 5px;
+}
+.student__info {
+    transition: 0.4s;
+}
+.student__info.inactive, .student__passport.inactive, .parent__info.inactive, .student__documents.inactive{
+    display: none;
+}
+.toggle__student__info__minus.inactive, .toggle__student__passport__minus.inactive, .toggle__parent__info__minus.inactive, .toggle__student__document__minus.inactive  {
+    display: none;
+}
+.toggle__student__info__eye.inactive, .toggle__student__passport__eye.inactive, .toggle__parent__info__eye.inactive, .toggle__student__document__eye.inactive {
+    display: none;
+}
+.student__document__1, .student__document__2 {
+    height: 100px;
+    width: 100px;
+    background: #ccc;
+    display: none;
+}
+.student__document__1 .student__document__img, .student__document__2 .student__document__img {
+    height: 100%;
+    width: 100%;
+}

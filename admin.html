@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PANEL SACRED HEART </title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/admin_custom.css">
+</head>
+<body>
+    <div class="main__wrapper justify-content-start">
+        <div class="sidebar active main__bg__dark">
+            <div class="sidebar__head">
+                <img src="./Assets/img/logo.png" alt="logo" class="img-fluid school__logo">
+            </div>
+            <hr class="sidebar__line">
+            <div class="sidebar__body">
+                <ul class="item">
+                    <li>
+                        <a href="./">
+                            <img src="./Assets/icons/icon_dashboard_white_white.png" alt="" class="img-fluid">
+                            <span>DASHBOARD</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./students.html">
+                            <img src="./Assets/icons/icon_students_white.png" alt="" class="img-fluid">
+                            <span>STUDENTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./teachers.html">
+                            <img src="./Assets/icons/icon_teachers_white.png" alt="" class="img-fluid">
+                            <span>Teachers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes.html">
+                            <img src="./Assets/icons/icon_classes_white.png" alt="" class="img-fluid">
+                            <span>CLASSES</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="subjects.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>SUBJECTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="examination.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>RESULT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./Assets/icons/icon_settings_white.png" alt="" class="img-fluid">
+                            <span >SETTINGS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid bg-light px-4" id="page">
+            <div class="lead rounded bg-white shadow-sm container__header d-flex justify-content-between align-items-center py-1 px-2 pl-2">
+                <img src="./Assets//icons/icon_menu.png" alt="" class="img-fluid header__toggler">
+                <div class="header_user d-flex align-items-center">
+                    <div class="rounded-pill avatar shadow-sm">
+                        <img src="./Assets/icons/icon_user_action.png" alt="">
+                    </div>
+                    <small>admin</small>
+                    <img src="./Assets/icons//icon_caret_down.png" alt="caret" class="caret">
+                </div>
+            </div>
+            <div class="user_action card">
+                <ul>
+                    <li>
+                        <a class="text-muted" href="">Settings</a>
+                    </li>
+                    <hr class="m-0">
+                    <li>
+                        <a class="text-muted" href="">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="page">
+                <div class="action__items row">
+
+                    <!-- action_item -->
+                    <div class="col-md-3 overflow-hidden action__item my-2 px-2">
+                        <div class="card">
+                            <div class="d-flex justify-content-between align-items-center px-2">
+                                <img src="./Assets/icons/icon_students.png" alt="Student icon" class="img-fluid">
+                                <div class="card-body d-flex flex-column align-items-end justify-content-between">
+                                    <strong class="h3">Students</strong>
+                                    <strong class="h3">1</strong>
+                                </div>
+                            </div>
+                            <hr class="action__item__line" />
+                            <div class="px-2 pb-2 m-0">
+                                <a href="./students.html" class="fs-5 text-muted text-decoration-none">view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- !action item -->
+
+
+                    <!-- action_item -->
+                    <div class="col-md-3  action__item my-2 px-2">
+                        <div class="card">
+                            <div class="d-flex justify-content-between align-items-center px-2">
+                                <img src="./Assets/icons/icon_teachers.png" alt="Student icon" class="img-fluid">
+                                <div class="card-body d-flex flex-column align-items-end justify-content-between">
+                                    <strong class="h3 text-weight-bold">Teachers</strong>
+                                    <strong class="h3">1</strong>
+                                </div>
+                            </div>
+                            <hr class="action__item__line" />
+                            <div class="px-2 pb-2 m-0">
+                                <a href="./teachers.html" class="fs-5 text-muted text-decoration-none">view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- !action item -->
+
+                    <!-- action_item -->
+                    <div class="col-md-3 action__item my-2 px-2">
+                        <div class="card">
+                            <div class="d-flex justify-content-between align-items-center px-2">
+                                <img src="./Assets/icons/icon_classes.png" alt="Student icon" class="img-fluid">
+                                <div class="card-body d-flex flex-column align-items-end justify-content-between">
+                                    <strong class="h3 text-weight-bold">Classes</strong>
+                                    <strong class="h3">1</strong>
+                                </div>
+                            </div>
+                            <hr class="action__item__line" />
+                            <div class="px-2 pb-2 m-0">
+                                <a href="./classes.html" class="fs-5 text-muted text-decoration-none">view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- !action item -->
+
+                    <!-- action_item -->
+                    <div class="col-md-3 action__item my-2 px-2">
+                        <div class="card">
+                            <div class="d-flex justify-content-between align-items-center px-2">
+                                <img src="./Assets/icons/icon_subjects.png" alt="Student icon" class="img-fluid">
+                                <div class="card-body d-flex flex-column align-items-end justify-content-between">
+                                    <strong class="h3 text-weight-bold">Subjects</strong>
+                                    <strong class="h3">1</strong>
+                                </div>
+                            </div>
+                            <hr class="action__item__line" />
+                            <div class="px-2 pb-2 m-0">
+                                <a href="./subjects.html" class="fs-5 text-muted text-decoration-none">view</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- !action item -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/admin.js"></script>
+</body>
+</html>

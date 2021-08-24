@@ -1,0 +1,2 @@
+Main Color: B0596F
+Main Dark : 80132F

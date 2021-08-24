@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBJECTS SACRED HEART </title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/admin_custom.css">
+    <link rel="stylesheet" href="./css/examination.css">
+</head>
+<body>
+    <div class="main__wrapper justify-content-start">
+        <div class="sidebar active main__bg__dark">
+            <div class="sidebar__head">
+                <img src="./Assets/img/logo.png" alt="logo" class="img-fluid school__logo">
+            </div>
+            <hr class="sidebar__line">
+            <div class="sidebar__body">
+                <ul class="item">
+                    <li>
+                        <a href="./">
+                            <img src="./Assets/icons/icon_dashboard_white_white.png" alt="" class="img-fluid">
+                            <span>DASHBOARD</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./students.html">
+                            <img src="./Assets/icons/icon_students_white.png" alt="" class="img-fluid">
+                            <span>STUDENTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./teachers.html">
+                            <img src="./Assets/icons/icon_teachers_white.png" alt="" class="img-fluid">
+                            <span>Teachers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./classes.html">
+                            <img src="./Assets/icons/icon_classes_white.png" alt="" class="img-fluid">
+                            <span>CLASSES</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="subjects.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>SUBJECTS</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="examination.html">
+                            <img src="./Assets/icons/icon_subjects_white.png" alt="" class="img-fluid">
+                            <span>RESULT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./Assets/icons/icon_settings_white.png" alt="" class="img-fluid">
+                            <span >SETTINGS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid bg-light flex-1 px-4" id="page">
+            <div class="lead rounded bg-white shadow-sm container__header d-flex justify-content-between align-items-center py-1 px-2 pl-2 mt-2">
+                <img src="./Assets//icons/icon_menu.png" alt="" class="img-fluid header__toggler">
+                <div class="header_user d-flex align-items-center">
+                    <div class="rounded-pill avatar shadow-sm">
+                        <img src="./Assets/icons/icon_user_action.png" alt="">
+                    </div>
+                    <small>admin</small>
+                    <img src="./Assets/icons//icon_caret_down.png" alt="caret" class="caret">
+                </div>
+            </div>
+            <div class="user_action card">
+                <ul>
+                    <li>
+                        <a class="text-muted" href="">Settings</a>
+                    </li>
+                    <hr class="m-0">
+                    <li>
+                        <a class="text-muted" href="">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="page my-2 bg-light" style="overflow-y: scroll; height: calc(100vh - 80px);">
+                <div class="row">
+                    <div class="col-md-6 result_student_details p-3 bg-white">
+                        <div class="result_student_details_inner">
+                            <form action="">
+                            <div class="row m-0">
+                                <div class="form-group col-md-6">
+                                    <label for="class_list">Class</label>
+                                    <select name="" id="class_list" class="form-control">
+                                        <option value="">Select Classs</option>
+                                        <option value="Primary 1">Primary 1</option>
+                                        <option value="Primary 2">Primary 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="student_list">Student</label>
+                                    <select name="" id="student_list" class="form-control">
+                                        <option value="">Select Student</option>
+                                        <option value="Alabi John">Alabi John</option>
+                                        <option value="Bolanle Taiwo">Bolanle Taiwo</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xs-12 my-2">
+                                    <label for="subject_list" class="my-1">Subject</label>
+                                    <select name="" id="subject_list" class="form-control">
+                                        <option value="">Please Select </option>
+                                        <option value="Maths">Mathematics</option>
+                                        <option value="englsih">English</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                        <label for="ca_list">CA Score</label>
+                                        <select name="" id="ca_list" class="form-control">
+                                            <option value="">Please Select</option>
+                                            
+                                        </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="exam_list">Exam Score</label>
+                                    <select name="" id="exam_list" class="form-control">
+                                        <option value="">Select </option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-xs-12 my-3">
+                                    <button class="w-100 btn btn-success text-white">SUBMIT</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6 h-100 result_student_details" >
+                        <div class="shadow-sm rounded p-3">
+                            <div class="p-2">
+                                <h4>Student Exam Record</h4>
+                            </div>
+                            <table class="table table-stripped table-bordered table-responsive">
+                                <thead>
+                                    <tr>
+                                        <th>Subject</th>
+                                        <th>CA</th>
+                                        <th>Exam</th>
+                                        <th>Total</th>
+                                        <th>Grade</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>14</td>
+                                        <td>40</td>
+                                        <td>54</td>
+                                        <td>C</td>
+                                        <td align="center"> <a  class="text-danger" href="#?delete"> <span class="fa fa-times"></span></a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>14</td>
+                                        <td>40</td>
+                                        <td>54</td>
+                                        <td>C</td>
+                                        <td align="center"> <a  class="text-danger" href="#?delete"> <span class="fa fa-times"></span></a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Maths</td>
+                                        <td>14</td>
+                                        <td>40</td>
+                                        <td>54</td>
+                                        <td>C</td>
+                                        <td align="center"> <a  class="text-danger" href="#?delete"> <span class="fa fa-times"></span></a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div>
+                                <ul class="list-style-none" style="list-style: none;">
+                                    <li >
+                                        <span class="fa fa-user"></span>
+                                        <span class="">Student Fullname</span>
+                                    </li>
+                                    <li>
+                                        <span class="fa fa-book"></span>
+                                        <span class="">9 subject </span> <!--subject offered-->
+                                    </li>
+                                    <li>
+                                        <span class="fa fa-check"></span>
+                                        <span class="">9 subject </span> <!--subject offered-->
+                                    </li>
+                                    <li>
+                                        <span class="fa fa-times"></span>
+                                        <span class="">2 Subject </span> <!--subject offered-->
+                                    </li>
+                                </ul>
+                            </div>
+                            <div align="center" class="my-4">
+                                <button class="text-primary btn btn-default"> <span class="fa fa-print"></span> Print</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/admin.js"></script>
+    <script src="./js/examination.js"></script>
+</body>
+</html>

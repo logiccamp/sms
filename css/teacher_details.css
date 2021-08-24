@@ -1,0 +1,14 @@
+.teacher__intro {
+    height: fit-content;
+}
+.teacher__intro .teacher__img {
+    height: 200px;
+    border-radius: 1000px;
+    width: 200px;
+}
+.teacher__intro .student__img > img{
+    border-radius: 1000px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

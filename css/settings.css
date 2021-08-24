@@ -1,0 +1,40 @@
+.logo-container, .main-settings {
+    border-top: 4px solid #80132F;
+}
+.logo-container img {
+    height: 280px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.main-settings header {
+    color: #545454;
+    position: relative;
+}
+.main-settings header a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.settings table tr td:first-child {
+    font-weight: bold;
+}
+
+.edit-settings {
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000000000;
+}
+
+.edit-settings .form {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    
+}
